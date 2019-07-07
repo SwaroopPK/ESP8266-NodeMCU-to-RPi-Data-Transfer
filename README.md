@@ -5,7 +5,7 @@
   
   * Making use of a common WiFi network to share the data.
   
-  * Making one of the ends i.e either ESP8266 or the RPi as an *Access Point* and connect the other to it.
+  * Making one of the ends (i.e either ESP8266 or the RPi) as an *Access Point* and connect the other to it.
   
     The 2nd and the 3rd methods do not use any online brokers. Therefore a broker is to be installed in the RPi. For information on how to install mosquitto broker on your RPi use the link [Getting Started with Mosquitto MQTT Broker on a Raspberry Pi](https://www.youtube.com/watch?v=AsDHEDbyLfg&t=72s).
   
