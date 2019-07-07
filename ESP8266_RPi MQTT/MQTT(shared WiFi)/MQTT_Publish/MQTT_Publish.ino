@@ -6,17 +6,17 @@ char c[10];
 
 // WiFi
 // Make sure to update this for your own WiFi network!
-const char* ssid = "Swaroop";
-const char* wifi_password = "1234567890";
+const char* ssid = "SSID";
+const char* wifi_password = "PASSWORD";
 
 // MQTT
 // Make sure to update this for your own MQTT Broker!
-const char* mqtt_server = "192.168.43.208";
-const char* mqtt_topic = "Voltage";
-const char* mqtt_username = "appiko";
-const char* mqtt_password = "appiko@123";
+const char* mqtt_server = "MQTT_server IP";
+const char* mqtt_topic = "Your topic";
+const char* mqtt_username = "Your Username";
+const char* mqtt_password = "Your mqtt_password";
 // The client id identifies the ESP8266 device. Think of it a bit like a hostname (Or just a name, like Greg).
-const char* clientID = "swaroop";
+const char* clientID = "Greg";
 
 
 // Initialise the WiFi and MQTT Client objects
