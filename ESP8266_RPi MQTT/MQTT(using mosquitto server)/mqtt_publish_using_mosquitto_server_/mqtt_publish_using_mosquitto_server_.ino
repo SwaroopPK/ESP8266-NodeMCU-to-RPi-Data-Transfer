@@ -2,12 +2,14 @@
 #include <PubSubClient.h>
 
 #define Pin A0
-const char* ssid     = "Swaroop";
-const char* password = "1234567890";
-String cmd;
+const char* ssid     = "SSID";
+const char* password = "WiFi Password";
 char c[10];
-const char* server = "85.119.83.194";
-//const char* server = "test.mosquitto.org";
+
+const char* server = "test.mosquitto.org";
+//If the code doesn't connect to the server comment the above line and uncomment the below line
+
+//const char* server = "85.119.83.194";
 
 WiFiClient wifiClient;
 PubSubClient mqttClient(wifiClient);
@@ -38,7 +40,7 @@ void setup() {
   mqttClient.setServer(server,1883);
    
 
-   if (mqttClient.connect("Swa")) 
+   if (mqttClient.connect("Your Client ID")) 
   {
     Serial.println("Connection has been established, well done");
  
@@ -57,7 +59,7 @@ void loop(){
   float voltage = analogRead(Pin);
   float V_pot = float(3-0)*voltage/1023;
   dtostrf(V_pot,4,3,c);
-  if(mqttClient.publish("Appiko/test", c))
+  if(mqttClient.publish("Your Topic", c))
   {
     Serial.println("Publish message success");
   }
