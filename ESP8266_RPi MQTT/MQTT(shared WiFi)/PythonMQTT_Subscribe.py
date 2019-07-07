@@ -1,10 +1,10 @@
 import paho.mqtt.client as mqtt
 
 # Don't forget to change the variables for the MQTT broker!
-mqtt_username = "appiko"
-mqtt_password = "appiko@123"
-mqtt_topic = "Voltage"
-mqtt_broker_ip = "192.168.43.208"
+mqtt_username = "Your MQTT_username"
+mqtt_password = "Your MQTT_password"
+mqtt_topic = "MQTT Topic"
+mqtt_broker_ip = "broker_ip" #Usually your RPi IP address
 
 client = mqtt.Client()
 # Set the username and password for the MQTT client
