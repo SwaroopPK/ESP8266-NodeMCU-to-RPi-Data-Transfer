@@ -1,5 +1,5 @@
 # ESP8266-NodeMCU-to-RPi-Data-Transfer
-  This repoisitory tells how wireless data transfer can be done from ESP8266 to RPi. Here ESP8266 acts as a **Publisher**, and RPi as a **Client** or a **Subscriber** and **MQTT** protocol is usedd to transfer data. The common methods used to traansfer data are as follows:
+  This repoisitory tells how wireless data transfer can be done from ESP8266 to RPi. Here ESP8266 acts as a **Publisher**, and RPi as a **Client** or a **Subscriber** and **MQTT** protocol is used to transfer data. The common methods used to transfer data are as follows:
   
   * Making use of [test.mosquitto.org](http://test.mosquitto.org/) server as a MQTT broker and sending the data via this server.
   
