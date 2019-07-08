@@ -43,8 +43,6 @@ void setup()
   }
 }
 
-void loop()
-{
   void loop(){
    mqttClient.loop();
   voltage = analogRead(Pot_Pin);
@@ -61,4 +59,4 @@ void loop()
  
   delay(2000);
 }
-}
+
