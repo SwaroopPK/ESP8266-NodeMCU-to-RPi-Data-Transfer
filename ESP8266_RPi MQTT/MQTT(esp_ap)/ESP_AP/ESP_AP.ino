@@ -44,11 +44,11 @@ void setup()
 }
 
   void loop(){
-   mqttClient.loop();
+   client.loop();
   voltage = analogRead(Pot_Pin);
   float V_pot = float(3)*voltage/1023;
   dtostrf(voltage,10,3,c);
-  if(mqttClient.publish(mqtt_topic, c))
+  if(client.publish(mqtt_topic, c))
   {
     Serial.println("Publish message success");
   }
