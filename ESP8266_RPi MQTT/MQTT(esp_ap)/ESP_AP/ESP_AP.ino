@@ -1,7 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h> // Allows us to connect to, and publish to the MQTT broker
 
-#define Pot_Pin A0;
+#define Pot_Pin A0
+char c[10];
 
 // WiFi
 // Make sure to update this for your own WiFi network!
