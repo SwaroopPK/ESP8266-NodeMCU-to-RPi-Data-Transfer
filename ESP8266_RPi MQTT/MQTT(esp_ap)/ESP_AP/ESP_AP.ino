@@ -45,7 +45,7 @@ void setup()
 
   void loop(){
    client.loop();
-  voltage = analogRead(Pot_Pin);
+  float voltage = analogRead(Pot_Pin);
   float V_pot = float(3)*voltage/1023;
   dtostrf(voltage,10,3,c);
   if(client.publish(mqtt_topic, c))
