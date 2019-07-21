@@ -35,10 +35,10 @@ When a device (a client) wants to receive data from the broker, we call this ope
 * *Subscribe*, where a device does to retrieve a message from the broker.
   
   
-  By now hopefully you would have an idea how a MQTT network will looks or works like. 
+  By now hopefully you would have an idea how a MQTT network might look or works like. 
   
   
-  The common methods used to transfer data are as follows:
+  The common methods used to transfer data are:
   
   * Making use of [test.mosquitto.org](http://test.mosquitto.org/) server as a MQTT broker and sending the data via this server.
   
