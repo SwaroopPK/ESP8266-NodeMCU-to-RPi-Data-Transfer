@@ -61,8 +61,8 @@ void loop() {
    client.loop();
   float voltage = analogRead(Pin);
   float V_pot = float(3-0)*voltage/1023;
-  dtostrf(V_pot,4,3,c);
-
+  dtostrf(V_pot,4,3,c);     // dtostrf function converts double type to string data type i.e a character array
+    //V_pot is a float and c is a char array
     // PUBLISH to the MQTT Broker (topic = mqtt_topic, defined at the beginning)
     if (client.publish(mqtt_topic, c)) {
       Serial.println("Publish message success");
