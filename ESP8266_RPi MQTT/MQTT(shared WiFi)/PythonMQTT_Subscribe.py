@@ -29,5 +29,5 @@ client.on_message = on_message
 client.connect(mqtt_broker_ip, 1883)
 
 # Once we have told the client to connect, let the client object run itself
-client.loop_forever()
+client.loop_forever()       #without a loop function code won't work properly
 client.disconnect()
